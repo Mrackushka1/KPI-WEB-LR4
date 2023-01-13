@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>LR_4-6</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="content-block ">
+                <h1>Препроцесори LESS i SCSS</h1>
+                <div class="descr">TR-13 Makarukha M.</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <form action="#">
+                <div class="content-block">
+                    <div class="content-block-wrapper">
+                        <label for="group">Введіть свої ім'я та групу</label>
+                        <input type="text" name="group" onchange="document.querySelector('.name-group').innerHTML = this.value; this.value = null;">
+                        <input type="button" value="Ввести">
+                        <div class="name-group"></div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 1</div>
+
+                    <div class="question-view-item-content">Which file extension should be used for LESS preprocessors?</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="radio" name="variant1">
+                            <div class="option-text">.css</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant1">
+                            <div class="option-text">.html</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant1">
+                            <div class="option-text">.less</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant1">
+                            <div class="option-text">.ls</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 2</div>
+
+                    <div class="question-view-item-content">SCSS is ...</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="radio" name="variant2">
+                            <div class="option-text">Sassy Cascading Style Sheets</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant2">
+                            <div class="option-text">Short Cascading Style Sheets</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant2">
+                            <div class="option-text">Second Cascading Style Sheets</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant2">
+                            <div class="option-text">Structured Cascading Style Sheets</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant2">
+                            <div class="option-text">Selected Cascading Style Sheets</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 3</div>
+
+                    <div class="question-view-item-content">Sign for variables in LESS is</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="radio" name="variant3">
+                            <div class="option-text">$</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant3">
+                            <div class="option-text">@</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant3">
+                            <div class="option-text">!</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant3">
+                            <div class="option-text">%</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant3">
+                            <div class="option-text">&</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 4</div>
+
+                    <div class="question-view-item-content">Choose correct answer:</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="radio" name="variant4">
+                            <div class="option-text">All deaturs avalable in SCSS are also avalable in CSS</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant4">
+                            <div class="option-text">SCSS syntax is very different comparing to CSS</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant4">
+                            <div class="option-text">SCSS includes all of the CSS features and other features that are not available in CSS</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant4">
+                            <div class="option-text">CSS is newer version of SCSS</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant4">
+                            <div class="option-text">CSS and SCSS are the same, but the way of using them is different.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 5</div>
+
+                    <div class="question-view-item-content">Does LESS has its own built-in functions?</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="radio" name="variant5">
+                            <div class="option-text">No</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant5">
+                            <div class="option-text">Yes</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant5">
+                            <div class="option-text">Yes, but only when using extensions</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="radio" name="variant5">
+                            <div class="option-text">LESS does not have built-in functions at all</div>
+                        </div>
+
+                        <!--<div class="text-option">-->
+                            <!--<input type="radio" name="variant5">-->
+                            <!--<div class="option-text">!!!</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <div class="content-block -dropdown">
+                    <div class="question-label">Question 6</div>
+
+                    <label for="vrnts1" class="question-view-item-dropdown-content">SCSS uses ...</label>
+
+                    <select name="vrnts1" class="question-dropdown-options">
+                        <option name="vrnt1" class="dropdown-option-text">fewer lines in its code than the CSS</option>
+                        <option name="vrnt1" class="dropdown-option-text">more lines in its code than the CSS</option>
+                        <option name="vrnt1" class="dropdown-option-text">same lines in its code than the CSS</option>
+                        <!--<option name="vrnt1" class="dropdown-option-text">!!!</option>-->
+                    </select>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 7</div>
+
+                    <div class="question-view-item-content">Choose all right ways to define variable in LESS:</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">@height: @width + 10px;</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">@size: 30%;</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">set count = 7;</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">@height = 30px;</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">$type: "css";</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check1">
+                            <div class="option-text">$width = 12px;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <div class="question-label">Question 8</div>
+
+                    <div class="question-view-item-content">SCSS ...</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-options">
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">contains more advanced features than CSS</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">is commonly used in the Ruby language</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">promotes properly nested rules</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">contains common functions</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">is widely used the HTML and JavaScript languages</div>
+                        </div>
+
+                        <div class="text-option">
+                            <input type="checkbox" name="check2">
+                            <div class="option-text">is the styling language that is used to style and create web pages</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <div class="question-label">Question 9</div>
+
+                    <div class="question-view-item-content">Match the correct answers about LESS:</div>
+
+                    <div class="question-label-options">
+                        <span>answers</span>
+                    </div>
+
+                    <div class="question-view-item">
+                        <div class="questions">
+                            <div class="questions-question" name="1">@conversion: 5cm + 10mm;</div>
+                            <div class="questions-question" name="2">@conversion: 2 - 3cm - 5mm;</div>
+                            <div class="questions-question" name="3">@conversion-units: 2 + 5px - 3cm;</div>
+                            <div class="questions-question" name="4">@base: 5%; @filler: @base * 2;</div>
+                        </div>
+
+                        <div class="question-options">
+                            <div class="drag">
+                                <p draggable="true" id="1">result is 6cm</p>
+                            </div>
+
+                            <div class="drag">
+                                <p draggable="true" id="2">result is -1.5cm</p>
+                            </div>
+
+                            <div class="drag">
+                                <p draggable="true" id="3">conversion is impossible</p>
+                            </div>
+
+                            <div class="drag">
+                                <p draggable="true" id="4">result is 10%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <div class="question-label">Question 10</div>
+
+                    <div class="question-view-item-dropdown-content">What is best?</div>
+
+                    <select name="vrnts2" class="question-dropdown-options">
+                        <option name="vrnt2" class="dropdown-option-text">Cartoons</option>
+                        <option name="vrnt2" class="dropdown-option-text">Movies</option>
+                        <option name="vrnt2" class="dropdown-option-text">Anime</option>
+                    </select>
+                </div>
+                <input type="button" value="Check answers"  onclick="getScore()">
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
