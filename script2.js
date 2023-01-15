@@ -67,38 +67,42 @@ function showStudentCopy() {
 
 
 
-var Progress = {
-    ...Student,
-    test: "",
-    attempt: 0,
-    grades: [],
-    getAverageGrade: function() {
+class Progress {
+
+    constructor() {
+        this.test = prompt("Enter test name:");
+        this.attempt = +prompt("Enter number of attempts to pass the test:");
+        this.grades = [];
+        this.speciality = Student.speciality
+        this.group = Student.group
+
+        console.log(`Test ${this.test} results:`);
+
+        for (var i = 1; i <= this.attempt; i++) {
+            this.grades[i-1] = +prompt(`Enter ${i} attempt score:`);
+            console.log(`Attempt: ${i}; score: ${this.grades[i-1]}`);
+        }
+
+        console.log(`Total score: ${this.getAverageGrade()}`);
+    }
+
+    getAverageGrade() {
         var sum = 0;
         for (var i = 0; i < this.grades.length; i++) {
             sum += this.grades[i];
         }
         return sum / this.grades.length;
-    },
-    showData: function() {
+    }
+
+    showData() {
         console.log('Speciality: ' + this.speciality + '\nGroup: ' + this.group
                 + '\nTest: ' + this.test + '\nAttempt: ' + this.attempt 
                 + '\nGrades: ' + this.grades + '\nAverage grade: ' + this.getAverageGrade());
     } 
 }
 
-function getProgress() {
-
-    Progress.test = prompt("Enter test name:");
-    Progress.attempt = +prompt("Enter number of attempts to pass the test:");
-
-    console.log(`Test ${Progress.test} results:`);
-
-    for(var i = 1; i <= Progress.attempt; i++) {
-        Progress.grades[i-1] = +prompt(`Enter ${i} attempt score:`);
-        console.log(`Attempt: ${i}; score: ${Progress.grades[i-1]}`);
-    }
-
-    console.log(`Total score: ${Progress.getAverageGrade()}`);
+function createProgressInstance() { 
+    window.progress = new Progress() 
 }
 
 
