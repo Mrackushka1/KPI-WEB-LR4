@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>LR_4-6</title>
+    </head>
+    <body>
+        <header>
+            <div class="content-block ">
+                <h1>Work with classes in JS</h1>
+                <div class="descr">TR-13 Makarukha M.</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <form action="#">
+                <div class="content-block">
+                    <div class="content-block-wrapper" style="flex-direction: column;">
+                        <label for="speciality" style="margin-bottom: 5px;">Your speciality:</label>
+                        <input type="text" name="speciality">
+                        <input type="button" value="Enter" style="margin: 10px 0 10px 0;" onclick="getStudentSpeciality()">
+
+                        <label for="group" style="margin-bottom: 5px;">Your group:</label>
+                        <input type="text" name="group">
+                        <input type="button" value="Enter" style="margin: 10px 0 10px 0;" onclick="getStudentGroup()">
+
+                        <input type="button" value="Get student object data" style="margin: 20px 0 0 0;" onclick="SomeGuy.showData();">
+
+                        <input type="button" value="Clear student data" onclick="wipeStudentData()">
+
+                        <input type="button" value="Get user copy data" style="margin: 20px 0 0 0;" onclick="showUserCopy();">
+
+                        <input type="button" value="Get student copy data" style="margin: 20px 0 0 0;" onclick="showStudentCopy();">
+
+                        <input type="button" value="Enter test results" style="margin: 20px 0 0 0;" onclick="getProgress();">
+
+                        <input type="button" value="Show test results" style="margin: 20px 0 0 0;" onclick="Progress.showData();">
+
+                        <input type="button" value="Get StudentClass data" style="margin: 20px 0 0 0;" onclick="studentData();">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="script2.js"></script>
+    </body>
+</html>
